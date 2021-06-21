@@ -1,32 +1,44 @@
-# language-template [<img src="https://avatars2.githubusercontent.com/u/9555108?s=200&v=4)" alt="alt text" height="20">](https://www.openfn.org) [![Build Status](https://travis-ci.org/OpenFn/language-template.svg?branch=master)](https://travis-ci.org/OpenFn/language-template)
+# Language OCL [![Build Status](https://travis-ci.org/OpenFn/language-ocl.svg?branch=main)](https://travis-ci.org/OpenFn/language-ocl)
 
-An OpenFn **_adaptor_** for building integration jobs for use with the \_\_\_\_ API.
+Language Pack for building expressions and operations for working with
+the [OCL API](http://ocl.github.io/ocl-docs/master/en/developer/html/ocl_developer_manual.html).
 
 ## Documentation
 
-- View the documentation at https://openfn.github.io/adaptor/
-- To update the documentation site, run: `./node_modules/.bin/jsdoc --readme ./README.md ./lib -d docs`
+View the [docs site](https://openfn.github.io/language-ocl/) for full
+technical documentation. Below, find a samples of the most commonly used helper
+functions.
 
-## post
-
-#### sample configuration
+## Sample State
 
 ```json
 {
-  "username": "taylor@openfn.org",
-  "password": "supersecret"
+  "configuration": {
+    "username": "#####",
+    "password": "#####",
+    "hostUrl": "https://api.openconceptlab.org/"
+  },
+  "data": {
+    "a": 1,
+    "b": 2
+  }
 }
 ```
 
-#### sample expression using operation
+## Mapping source concepts to destination API
+
+
+#### Recieve form data from source application and convert data element keys to destination application.
 
 ```js
-post({
-  "url": "api/v1/forms/data/wide/json/formId",
-  "body": {"a":1}
-  "headers": {}
-})
+map(  "data": {
+    "a": 1,
+    "b": 2},
+  {users:"haftamuk", sources: "eCHIS-CODES", concepts: "fp_new_at_10_to_14" }
+  );
 ```
+
+
 
 ## Development
 
