@@ -1,4 +1,9 @@
-# Language OCL [![Build Status](https://travis-ci.org/OpenFn/language-ocl.svg?branch=main)](https://travis-ci.org/OpenFn/language-ocl)
+# _⚠️ MOVED TO [OpenFn/adaptors](https://github.com/OpenFn/adaptors)! ⚠️_
+
+**N.B.: New versions are available at:
+https://github.com/OpenFn/adaptors/tree/main/packages/ocl**
+
+# Language OCL (Archived)
 
 Language Pack for building expressions and operations for working with
 the [OCL API](http://ocl.github.io/ocl-docs/master/en/developer/html/ocl_developer_manual.html).
