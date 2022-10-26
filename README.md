@@ -9,19 +9,13 @@ View the [docs site](https://openfn.github.io/language-ocl/) for full
 technical documentation. Below, find a samples of the most commonly used helper
 functions.
 
-## Sample State
+## Sample configuration
 
 ```json
 {
-  "configuration": {
-    "username": "#####",
-    "password": "#####",
-    "hostUrl": "https://api.openconceptlab.org/"
-  },
-  "data": {
-    "a": 1,
-    "b": 2
-  }
+  "username": "username",
+  "password": "supersecretpassword",
+  "hostUrl": "https://api.openconceptlab.org/"
 }
 ```
 
